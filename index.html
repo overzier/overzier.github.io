@@ -25,7 +25,7 @@
     
     
 <map name="image-map" id="base">
-    <area target="_blank" alt="CV" title="CV" href="CV.html" coords="527,373,876,697" shape="rect"  onMouseOver="cv() PlaySound( 'mySound') " onMouseOut="base() PlaySound( 'mySound') ">
+    <area target="_blank" alt="CV" title="CV" href="CV.html" coords="527,373,876,697" shape="rect"  onMouseOver="cv()" onMouseOut="base()">
     <area target="_blank" alt="Research" title="Research" href="Research.html" coords="942,512,939,449,969,443,1103,315,934,309,927,217,1393,212,1393,314,1208,319,1042,499,1013,512" shape="poly">
     <area target="_blank" alt="Data" title="Data" href="Data.html" coords="705,555,474,549,369,438,503,432,489,334,96,317,91,412,226,431,413,619,671,636,708,633" shape="poly">
     <area target="_blank" alt="Teaching" title="Teaching" href="Teaching.html" coords="705,755,428,743,238,940,36,948,33,1053,308,1065,489,858,703,845" shape="poly">
@@ -35,7 +35,6 @@
     <area target="_blank" alt="Missions" title="Missions" href="Missions.html" coords="1047,631,1334,634,1485,487,1868,483,1865,314,1488,300,1278,524,1044,541" shape="poly">
 
     </map>
-<audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg' />
 
   
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -50,12 +49,15 @@
 </script>
     
 <script type="text/javascript" language="JavaScript">
-   
+   <audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg' />
+
     function base(){
     document.defaultImg.src="base.jpeg";
+    StopSound( 'mySound')
 }
 function cv(){
     document.defaultImg.src="base_CV.jpeg";
+    PlaySound( 'mySound') 
 }
 
  </script>   
