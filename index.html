@@ -24,8 +24,8 @@
 </div>
     
 <map name="image-map" id="base">
-    <area target="_blank" alt="" title="CV" href="cv.html" coords="501,373,501,492,722,694,822,695,827,612,649,371" shape="poly"  onMouseOver="cv()" onMouseOut="base()">
-    <area target="_blank" alt="" title="Research" href="research.html" coords="922,695,918,339,1397,334,1395,517,1215,526,1052,690,1049,692" shape="poly"  onMouseOver="research()" onMouseOut="base()">
+    <area target="" alt="" title="CV" href="cv.html" coords="501,373,501,492,722,694,822,695,827,612,649,371" shape="poly"  onMouseOver="cv()" onMouseOut="base()">
+    <area target="" alt="" title="Research" href="research.html" coords="922,695,918,339,1397,334,1395,517,1215,526,1052,690,1049,692" shape="poly"  onMouseOver="research()" onMouseOut="base()">
     <area target="_blank" alt="" title="Missions" href="missions.html" coords="1044,738,1288,726,1495,478,1872,473,1877,685,1353,834,1042,833" shape="poly"  onMouseOver="missions()" onMouseOut="base()">
     <area target="_blank" alt="" title="Management" href="management.html" coords="1044,924,1322,923,1515,1096,1878,1111,1884,1404,1422,1403,1409,1174,1266,1035,1044,1041" shape="poly"  onMouseOver="management()" onMouseOut="base()">
     <area target="_blank" alt="" title="Media" href="media.html" coords="934,1057,1032,1055,1319,1352,1030,1362" shape="poly"  onMouseOver="media()" onMouseOut="base()">
@@ -34,8 +34,8 @@
     <area target="_blank" alt="" title="Data" href="data.html" coords="706,824,394,834,225,636,72,634,65,472,464,477,525,702,703,721" shape="poly"  onMouseOver="data()" onMouseOut="base()">
 </map>
 
-  
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 <script type="text/javascript" language="JavaScript">
     function set_body_height() { // set body height = window height
         $('body').height($(window).height());
@@ -47,38 +47,34 @@
 </script>
     
 <script type="text/javascript" language="JavaScript">
-
-    function base(){
+function base(){
     document.defaultImg.src="base.jpeg";
 }
 function cv(){
     document.defaultImg.src="cv.jpeg";
 }
-    function data(){
+function data(){
     document.defaultImg.src="data.jpeg";
 }
-    function management(){
+function management(){
     document.defaultImg.src="management.jpeg";
 }
-    function media(){
+function media(){
     document.defaultImg.src="media.jpeg";
 }
-    function missions(){
+function missions(){
     document.defaultImg.src="missions.jpeg";
 }
-    function publications(){
+function publications(){
     document.defaultImg.src="publications.jpeg";
 }
-    function research(){
+function research(){
     document.defaultImg.src="research.jpeg";
 }
-    function teaching(){
+function teaching(){
     document.defaultImg.src="teaching.jpeg";
 }
- </script>   
+</script>   
 
- 
-
-    
-    </body>
+</body>
 </html>
